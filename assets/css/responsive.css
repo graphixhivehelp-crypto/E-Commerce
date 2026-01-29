@@ -1,0 +1,354 @@
+/* Responsive Design - Mobile First Approach */
+
+/* Extra Small Devices (up to 576px) */
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .search-container {
+        display: none !important;
+    }
+
+    .mobile-search {
+        display: block !important;
+    }
+
+    .hero-banner {
+        padding: 2rem 1rem;
+        margin: 1rem 0;
+    }
+
+    .hero-banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-banner p {
+        font-size: 0.95rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .product-card {
+        margin-bottom: 1rem;
+    }
+
+    .product-image {
+        height: 180px;
+    }
+
+    .product-info {
+        padding: 0.8rem;
+    }
+
+    .product-name {
+        font-size: 0.9rem;
+    }
+
+    .product-detail {
+        padding: 1rem;
+    }
+
+    .product-gallery {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .product-details-info {
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    .product-details-info h1 {
+        font-size: 1.3rem;
+    }
+
+    .price-lg {
+        font-size: 1.5rem;
+    }
+
+    .cart-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-summary {
+        position: static;
+        top: auto;
+    }
+
+    .cart-item {
+        grid-template-columns: 80px 1fr;
+        gap: 1rem;
+    }
+
+    .cart-item-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cart-item-actions {
+        grid-column: 1 / -1;
+        margin-top: 1rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .btn-primary,
+    .btn-buy-now,
+    .btn-wishlist-lg {
+        width: 100%;
+    }
+
+    .quantity-selector {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+
+    .footer h5 {
+        font-size: 1rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .nav-link {
+        margin: 0;
+        padding: 0.5rem 0;
+    }
+
+    .dropdown-menu {
+        min-width: 200px;
+    }
+}
+
+/* Small Devices (576px and up) */
+@media (min-width: 576px) {
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .cart-item {
+        grid-template-columns: 100px 1fr auto;
+    }
+}
+
+/* Medium Devices (768px and up) */
+@media (min-width: 768px) {
+    .search-container {
+        display: flex !important;
+        max-width: 400px;
+    }
+
+    .mobile-search {
+        display: none !important;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .product-image {
+        height: 220px;
+    }
+
+    .hero-banner {
+        padding: 3rem 0;
+    }
+
+    .hero-banner h1 {
+        font-size: 2rem;
+    }
+
+    .product-gallery {
+        flex-direction: row;
+    }
+
+    .gallery-thumbnails {
+        max-width: 100%;
+        flex-direction: row;
+    }
+
+    .product-details-info {
+        padding-left: 2rem;
+    }
+
+    .cart-item {
+        grid-template-columns: 100px 1fr auto;
+    }
+
+    .footer {
+        padding: 3rem 0 1rem;
+    }
+}
+
+/* Large Devices (992px and up) */
+@media (min-width: 992px) {
+    .search-container {
+        max-width: 500px;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+
+    .product-image {
+        height: 250px;
+    }
+
+    .hero-banner {
+        padding: 4rem 0;
+    }
+
+    .hero-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .cart-container {
+        grid-template-columns: 1fr 350px;
+    }
+
+    .cart-summary {
+        position: sticky;
+        top: 100px;
+    }
+
+    .action-buttons {
+        flex-direction: row;
+    }
+
+    .gallery-thumbnails {
+        flex-direction: column;
+        max-width: 80px;
+    }
+}
+
+/* Extra Large Devices (1200px and up) */
+@media (min-width: 1200px) {
+    .container-fluid {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .hero-banner h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Ultra Large Devices (1400px and up) */
+@media (min-width: 1400px) {
+    .product-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .product-card:hover {
+        transform: translateY(-4px);
+    }
+
+    button, a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .nav-link {
+        padding: 0.8rem 0.5rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .product-actions,
+    .btn-primary,
+    .checkout-btn {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .product-card,
+    .cart-item {
+        page-break-inside: avoid;
+    }
+}
+
+/* Dark Mode Support (Optional) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --light-bg: #1a1a1a;
+        --light-gray: #2a2a2a;
+        --text-dark: #f0f0f0;
+        --text-light: #b0b0b0;
+        --border-color: #404040;
+    }
+
+    body {
+        background-color: #0a0a0a;
+        color: var(--text-dark);
+    }
+
+    .product-card,
+    .product-detail,
+    .cart-items,
+    .cart-summary {
+        background: #1a1a1a;
+    }
+
+    .form-control {
+        background: #2a2a2a;
+        color: var(--text-dark);
+    }
+}
+
+/* Reduce Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: more) {
+    :root {
+        --primary-color: #ff6600;
+        --border-color: #333333;
+    }
+
+    .product-card {
+        border: 2px solid var(--border-color);
+    }
+}

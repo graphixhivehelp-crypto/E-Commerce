@@ -1,0 +1,98 @@
+# Git Ignore - ShopHub E-Commerce Platform
+
+# Configuration Files with Sensitive Data
+config/database.php
+config/constants.php
+.env
+.env.local
+.env.*.local
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.project
+.buildpath
+.settings/
+*.iml
+
+# Log Files
+*.log
+logs/
+error_log
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.cache
+temp/
+cache/
+
+# Upload & Backup Directories
+uploads/*
+!uploads/.gitkeep
+backups/
+*.sql
+*.dump
+
+# Composer (if used)
+vendor/
+composer.lock
+
+# Node.js (if used)
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Runtime Data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Testing
+tests/reports/
+coverage/
+.phpunit.result.cache
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Development Files
+*.dev.php
+debug.php
+test.php
+.development
+
+# Build Files (if applicable)
+dist/
+build/
+out/
+
+# Lock Files
+*.lock
+
+# Misc
+.ftpignore
+.gitattributes
+ROADMAP.md
+CHANGELOG.md
+DEVELOP.md
+
+# Keep These
+!.gitkeep
+!.htaccess
+!config/database.example.php
+!config/constants.example.php
